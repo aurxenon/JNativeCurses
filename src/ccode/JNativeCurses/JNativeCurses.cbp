@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="JNativeCurses" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_gcc_compiler_x64" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/JNativeCurses" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_compiler_x64" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="user32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/JNativeCurses" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gnu_gcc_compiler_x64" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-DBUILD_DLL" />
+					<Add directory="C:/Program Files/Java/jdk1.8.0_171/include" />
+					<Add directory="C:/pdcurses/wincon" />
+					<Add directory="C:/Program Files/Java/jdk1.8.0_171/include/win32" />
+					<Add directory="C:/pdcurses" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:/pdcurses/wincon" />
+					<Add directory="C:/pdcurses" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="C:/pdcurses/wincon/pdcurses.a" />
+					<Add directory="C:/pdcurses/wincon" />
+					<Add directory="C:/pdcurses" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="C:/pdcurses/wincon" />
+			<Add directory="C:/pdcurses" />
+			<Add directory="C:/Program Files/Java/jdk1.8.0_171/include" />
+			<Add directory="C:/Program Files/Java/jdk1.8.0_171/include/win32" />
+		</Compiler>
+		<Linker>
+			<Add library="C:/pdcurses/wincon/pdcurses.a" />
+		</Linker>
+		<Unit filename="net_aurxenon_JNativeCurses_Display_Display.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="net_aurxenon_JNativeCurses_Display_Display.h" />
+		<Unit filename="net_aurxenon_JNativeCurses_Input_Input.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="net_aurxenon_JNativeCurses_Input_Input.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

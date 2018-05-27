@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1514144174 source:c:\users\edwar\ideaprojects\jnativecurses\src\ccode\jnativecurses\main.cpp
+	"main.h"
+
+1514144174 c:\users\edwar\ideaprojects\jnativecurses\src\ccode\jnativecurses\main.h
+	<windows.h>
+
+1527358412 source:c:\users\edwar\ideaprojects\jnativecurses\src\ccode\jnativecurses\net_aurxenon_jnativecurses_display_display.c
+	"net_aurxenon_JNativeCurses_Display_Display.h"
+
+1526947413 c:\users\edwar\ideaprojects\jnativecurses\src\ccode\jnativecurses\net_aurxenon_jnativecurses_display_display.h
+	<stddef.h>
+	<jni.h>
+	<curses.h>
+
+1525561770 c:\program files\java\jdk1.8.0_171\include\jni.h
+	<stdio.h>
+	<stdarg.h>
+	"jni_md.h"
+
+1525561770 c:\program files\java\jdk1.8.0_171\include\win32\jni_md.h
+
+1527021088 c:\pdcurses\curses.h
+	<stdarg.h>
+	<stddef.h>
+	<stdio.h>
+	<wchar.h>
+
+1526601378 source:c:\users\edwar\ideaprojects\jnativecurses\src\ccode\jnativecurses\net_aurxenon_jnativecurses_input_input.c
+	"net_aurxenon_JNativeCurses_Input_Input.h"
+
+1526242316 c:\users\edwar\ideaprojects\jnativecurses\src\ccode\jnativecurses\net_aurxenon_jnativecurses_input_input.h
+	<stddef.h>
+	<jni.h>
+	<curses.h>
+
+1527449579 c:\pdcurses-master\curses.h
+	<stdarg.h>
+	<stdint.h>
+	<stddef.h>
+	<stdio.h>
+	<wchar.h>
+
