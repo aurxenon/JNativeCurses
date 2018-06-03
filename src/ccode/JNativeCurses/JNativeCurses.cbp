@@ -34,30 +34,30 @@
 					<Add option="-Wall" />
 					<Add option="-DBUILD_DLL" />
 					<Add directory="C:/Program Files/Java/jdk1.8.0_171/include" />
-					<Add directory="C:/pdcurses/wincon" />
+					<Add directory="C:/pdcurses-master/win32" />
 					<Add directory="C:/Program Files/Java/jdk1.8.0_171/include/win32" />
-					<Add directory="C:/pdcurses" />
+					<Add directory="C:/pdcurses-master" />
 				</Compiler>
 				<ResourceCompiler>
-					<Add directory="C:/pdcurses/wincon" />
-					<Add directory="C:/pdcurses" />
+					<Add directory="C:/pdcurses-master/win32" />
+					<Add directory="C:/pdcurses-master" />
 				</ResourceCompiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="C:/pdcurses/wincon/pdcurses.a" />
-					<Add directory="C:/pdcurses/wincon" />
-					<Add directory="C:/pdcurses" />
+					<Add library="C:/pdcurses-master/win32/pdcurses.a" />
+					<Add directory="C:/pdcurses-master/win32" />
+					<Add directory="C:/pdcurses-master" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
-			<Add directory="C:/pdcurses/wincon" />
-			<Add directory="C:/pdcurses" />
+			<Add directory="C:/pdcurses-master/win32" />
+			<Add directory="C:/pdcurses-master" />
 			<Add directory="C:/Program Files/Java/jdk1.8.0_171/include" />
 			<Add directory="C:/Program Files/Java/jdk1.8.0_171/include/win32" />
 		</Compiler>
 		<Linker>
-			<Add library="C:/pdcurses/wincon/pdcurses.a" />
+			<Add library="C:/pdcurses-master/win32/pdcurses.a" />
 		</Linker>
 		<Unit filename="net_aurxenon_JNativeCurses_Display_Display.c">
 			<Option compilerVar="CC" />

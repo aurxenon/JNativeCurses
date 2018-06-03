@@ -43,11 +43,19 @@ JNIEXPORT void JNICALL Java_net_aurxenon_JNativeCurses_Display_Display_nativeDra
 
 /*
  * Class:     net_aurxenon_JNativeCurses_Display_Display
+ * Method:    drawCursor
+ * Signature: (Ljava/lang/String;IISSSSSS)V
+ */
+JNIEXPORT void JNICALL Java_net_aurxenon_JNativeCurses_Display_Display_drawCursor
+  (JNIEnv *, jobject, jint, jint);
+
+/*
+ * Class:     net_aurxenon_JNativeCurses_Display_Display
  * Method:    finishRender
  * Signature: ()V
  */
 JNIEXPORT void JNICALL Java_net_aurxenon_JNativeCurses_Display_Display_finishRender
-  (JNIEnv *, jobject)
+  (JNIEnv *, jobject);
 
 /*
  * Class:     net_aurxenon_JNativeCurses_Display_Display
@@ -63,6 +71,22 @@ JNIEXPORT void JNICALL Java_net_aurxenon_JNativeCurses_Display_Display_hideCurso
  * Signature: ()V
  */
 JNIEXPORT void JNICALL Java_net_aurxenon_JNativeCurses_Display_Display_showCursor
+  (JNIEnv *, jobject);
+
+/*
+ * Class:     net_aurxenon_JNativeCurses_Display_Display
+ * Method:    refresh
+ * Signature: ()V
+ */
+JNIEXPORT void JNICALL Java_net_aurxenon_JNativeCurses_Display_Display_refresh
+  (JNIEnv *, jobject);
+
+/*
+ * Class:     net_aurxenon_JNativeCurses_Display_Display
+ * Method:    exit
+ * Signature: ()V
+ */
+JNIEXPORT void JNICALL Java_net_aurxenon_JNativeCurses_Display_Display_exit
   (JNIEnv *, jobject);
 
 /*

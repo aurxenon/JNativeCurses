@@ -35,6 +35,10 @@ JNIEXPORT void JNICALL Java_net_aurxenon_JNativeCurses_Display_Display_nativeDra
     attroff(COLOR_PAIR(colorPairCount));
     (*env)->ReleaseStringUTFChars(env, text, utf_string);
 }
+JNIEXPORT void JNICALL Java_net_aurxenon_JNativeCurses_Display_Display_drawCursor(JNIEnv *env, jobject obj, jint posX, jint posY)
+{
+    move((int)posY, (int)posX);
+}
 JNIEXPORT void JNICALL Java_net_aurxenon_JNativeCurses_Display_Display_finishRender(JNIEnv *env, jobject obj)
 {
     refresh();
@@ -47,6 +51,15 @@ JNIEXPORT void JNICALL Java_net_aurxenon_JNativeCurses_Display_Display_hideCurso
 JNIEXPORT void JNICALL Java_net_aurxenon_JNativeCurses_Display_Display_showCursor(JNIEnv *env, jobject obj)
 {
     curs_set(1);
+}
+JNIEXPORT void JNICALL Java_net_aurxenon_JNativeCurses_Display_Display_refresh(JNIEnv *env, jobject obj)
+{
+    refresh();
+}
+JNIEXPORT void JNICALL Java_net_aurxenon_JNativeCurses_Display_Display_exit(JNIEnv *env, jobject obj)
+{
+    endwin();
+    refresh();
 }
 JNIEXPORT jint JNICALL Java_net_aurxenon_JNativeCurses_Display_Display_getMaxTerminalHeight(JNIEnv *env, jobject obj)
 {

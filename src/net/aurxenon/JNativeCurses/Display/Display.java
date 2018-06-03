@@ -10,6 +10,7 @@ public class Display {
 
     private native void nativeDrawCharacter(char character, int x, int y, int backgroundColor, int foregroundColor);
     private native void nativeDrawText(String text, int x, int y, int backgroundColor, int foregroundColor);
+    public native void drawCursor(int x, int y);
     public native void finishRender();
 
     public void drawCharacter(char character, int x, int y, Color backgroundColor, Color foregroundColor) {
@@ -21,6 +22,8 @@ public class Display {
 
     public native void hideCursor();
     public native void showCursor();
+    public native void refresh();
+    public native void exit();
 
     public native int getMaxTerminalHeight();
     public native int getMaxTerminalWidth();
